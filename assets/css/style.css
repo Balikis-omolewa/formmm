@@ -32,13 +32,17 @@ video {
   height: 100%;
 }
 
-
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
   }
 }
-
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  video {
+    object-fit: contain; /* Adjust object-fit property for better mobile responsiveness */
+  }
+}
 a {
   color: #ffffff;
   text-decoration: none;
